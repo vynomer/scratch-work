@@ -1,11 +1,17 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { HeroService } from './hero.service';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('HeroService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [HeroService]
+      providers: [
+        HeroService
+      ],
+      imports: [
+        RouterTestingModule
+      ]
     });
   });
 
